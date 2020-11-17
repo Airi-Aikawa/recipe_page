@@ -1,58 +1,103 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    <p class="explanation">
+      Look no further for a creamy and ultra smooth classic cheesecake recipe!
+      Paired with a buttery graham cracker crust, no one can deny its simple
+      decadence. For the best results, bake in a water bath.
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <p class="ingredient">Ingredients</p>
+ <p class="preparation">Graham Cracker Crust</p>
+   <!--     <p>
+      1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet graham
+      crackers)
+    </p>
+    <p>5 Tablespoons (70g) unsalted butter, melted</p>
+    <p>1/4 cup (50g) granulated sugar</p>
+    <h2>Cheesecake</h2>
+    <p>
+      four 8-ounce blocks (904g) full-fat cream cheese, softened to room
+      temperature
+    </p>
+    <p>1 cup (200g) granulated sugar</p>
+    <p>1 cup (240g) full-fat sour cream, at room temperature</p>
+    <p>1 teaspoon pure vanilla extract</p>
+    <p>2 teaspoons fresh lemon juice (optional, but recommended)</p>
+    <p>3 large eggs, at room temperature</p>
+    <p>
+      topping suggestions: salted caramel, lemon curd, strawberry topping,
+      chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream,
+      or raspberry sauce (recipe in notes)
+    </p> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+h1{
+position: absolute;
+width: 587px;
+height: 64px;
+left: 236px;
+top: 49px;
+font-family: "Playfair Display";
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 64px;
+color: #000000;
+white-space: nowrap;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.explanation{
+position: absolute;
+width: 592px;
+height: 51px;
+left: 261px;
+top: 125px;
+font-family: Montserrat;
+font-style: italic;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #4F4F4F;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.ingredient {
+  position: absolute;
+width: 128px;
+height: 32px;
+left: 236px;
+top: 711px;
+
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+color: #333333;
 }
-a {
-  color: #42b983;
+.preparation{
+position: absolute;
+width: 177px;
+height: 24px;
+left: 237px;
+top: 775px;
+font-family: Playfair Display;
+font-style: italic;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+color: #333333;
+white-space: nowrap;
 }
 </style>
