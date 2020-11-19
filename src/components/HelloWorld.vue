@@ -17,21 +17,32 @@
     <label class="butter">5 Tablespoons (70g) unsalted butter, melted</label>
     <input type="checkbox" id="checkbox" v-model="checked" class="checkbox3" />
     <label class="sugar">1/4 cup (50g) granulated sugar</label>
-        <!--    <h2>Cheesecake</h2>
-    <p>
+    <h2 class="cheesecake">Cheesecake</h2>
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox4" />
+    <label class="creamcheese">
       four 8-ounce blocks (904g) full-fat cream cheese, softened to room
       temperature
-    </p>
-    <p>1 cup (200g) granulated sugar</p>
-    <p>1 cup (240g) full-fat sour cream, at room temperature</p>
-    <p>1 teaspoon pure vanilla extract</p>
-    <p>2 teaspoons fresh lemon juice (optional, but recommended)</p>
-    <p>3 large eggs, at room temperature</p>
-    <p>
+    </label>
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox5" />
+    <label class="cupsugar">1 cup (200g) granulated sugar</label>
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox6" />
+    <label class="temperature"
+      >1 cup (240g) full-fat sour cream, at room temperature</label
+    >
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox7" />
+    <label class="vanilla">1 teaspoon pure vanilla extract</label>
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox8" />
+    <label class="juice"
+      >2 teaspoons fresh lemon juice (optional, but recommended)</label
+    >
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox9" />
+    <label class="egg">3 large eggs, at room temperature</label>
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox10" />
+    <label class="topping">
       topping suggestions: salted caramel, lemon curd, strawberry topping,
       chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream,
       or raspberry sauce (recipe in notes)
-    </p> -->
+    </label>
   </div>
 </template>
 
@@ -170,6 +181,180 @@ h1 {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  color: #333333;
+}
+.cheesecake {
+  position: absolute;
+  width: 287px;
+  height: 48px;
+  left: 238px;
+  top: 980px;
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+.checkbox4 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1040px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.creamcheese {
+  position: absolute;
+  width: 599px;
+  height: 50px;
+  left: 275px;
+  top: 1040px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+.checkbox5 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1102px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.cupsugar {
+  position: absolute;
+  width: 246px;
+  height: 20px;
+  left: 275px;
+  top: 1102px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.checkbox6 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1137px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.temperature {
+  position: absolute;
+  width: 429px;
+  height: 25px;
+  left: 275px;
+  top: 1135px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+.checkbox7 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1172px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.vanilla {
+  position: absolute;
+  width: 251px;
+  height: 20px;
+  left: 275px;
+  top: 1173px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.checkbox8 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1207px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.juice {
+  position: absolute;
+  width: 488px;
+  height: 25px;
+  left: 275px;
+  top: 1205px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+.checkbox9 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1244px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.egg {
+  position: absolute;
+  width: 277px;
+  height: 25px;
+  left: 275px;
+  top: 1242px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+.checkbox10 {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 237px;
+  top: 1279px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.topping {
+  position: absolute;
+  width: 543px;
+  height: 75px;
+  left: 275px;
+  top: 1279px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
   color: #333333;
 }
 </style>
