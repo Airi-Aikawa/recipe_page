@@ -1,15 +1,15 @@
 <template>
   <div>
     <p class="instruction">Instructions</p>
-    <p class="rectangle43"></p>
-    <p class="rectangle1">1</p>
-    <p class="oven">
+    <p class="rectangle rectangle43"></p>
+    <p class="rectangle rectangle1">1</p>
+    <p class="text oven">
       Adjust the oven rack to the lower-middle position and preheat oven to
       350°F (177°C).
     </p>
-    <p class="rectangle44"></p>
-    <p class="rectangle2">2</p>
-    <p class="foodProcessor">
+    <p class="rectangle rectangle44"></p>
+    <p class="rectangle rectangle2">2</p>
+    <p class="text foodProcessor">
       Make the crust: Using a food processor, pulse the graham crackers into
       crumbs. Pour into a medium bowl and stir in sugar and melted butter until
       combined. (You can also pulse it all together in the food processor.)
@@ -21,9 +21,9 @@
       water bath in step 4. Allow crust to slightly cool as you prepare the
       filling.
     </p>
-    <p class="rectangle45"></p>
-    <p class="rectangle3">3</p>
-    <p class="mixer">
+    <p class="rectangle rectangle45"></p>
+    <p class="rectangle rectangle3">3</p>
+    <p class="text mixer">
       Make the filling: Using a handheld or stand mixer fitted with a paddle
       attachment, beat the cream cheese and granulated sugar together on
       medium-high speed in a large bowl until the mixture is smooth and creamy,
@@ -34,9 +34,9 @@
       from deflating and cracking as it cools, avoid over-mixing the batter as
       best you can.
     </p>
-    <p class="rectangle46"></p>
-    <p class="rectangle4">4</p>
-    <p class="water">
+    <p class="rectangle rectangle46"></p>
+    <p class="rectangle rectangle4">4</p>
+    <p class="text water">
       Prepare the simple water bath (see note) Boil a pot of water. You need 1
       inch of water in your roasting pan for the water bath, so make sure you
       boil enough. I use an entire kettle of hot water. As the water is heating
@@ -47,9 +47,9 @@
       you can place the roasting pan in the oven first, then pour the hot water
       in. Whichever is easier for you.)
     </p>
-    <p class="rectangle47"></p>
-    <p class="rectangle5">5</p>
-    <p class="bake">
+    <p class="rectangle rectangle47"></p>
+    <p class="rectangle rectangle5">5</p>
+    <p class="text bake">
       Bake cheesecake for 55-70 minutes or until the center is almost set. When
       it’s done, the center of the cheesecake will slightly wobble if you gently
       shake the pan. Turn the oven off and open the oven door slightly. Let the
@@ -58,17 +58,17 @@
       room temperature. Then refrigerate the cheesecake for at least 4 hours or
       overnight.
     </p>
-    <p class="rectangle48"></p>
-    <p class="rectangle6">6</p>
-    <p class="knife">
+    <p class="rectangle rectangle48"></p>
+    <p class="rectangle rectangle6">6</p>
+    <p class="text knife">
       Use a knife to loosen the chilled cheesecake from the rim of the
       springform pan, then remove the rim. Using a clean sharp knife, cut into
       slices for serving. For neat slices, wipe the knife clean and dip into
       warm water between each slice.
     </p>
-    <p class="rectangle49"></p>
-    <p class="rectangle7">7</p>
-    <p class="serveCheesecake">
+    <p class="rectangle rectangle49"></p>
+    <p class="rectangle rectangle7">7</p>
+    <p class="text serveCheesecake">
       Serve cheesecake with desired toppings. Cover and store leftover
       cheesecake in the refrigerator for up to 5 days.
     </p>
@@ -86,6 +86,74 @@ export default {};
 </script>
 
 <style scoped>
+.rectangle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 236px;
+  background: #f2994a;
+  border-radius: 6px;
+}
+.rectangle43 {
+  top: 1442px;
+}
+.rectangle44 {
+  top: 1513px;
+}
+.rectangle45 {
+  top: 1799px;
+}
+.rectangle46 {
+  top: 2077px;
+}
+.rectangle47 {
+  top: 2357px;
+}
+.rectangle48 {
+  top: 2589px;
+}
+.rectangle49 {
+  top: 2723px;
+}
+.rectangle {
+  position: absolute;
+  height: 32px;
+  left: 249px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.rectangle1 {
+  width: 10px;
+  top: 1440px;
+}
+.rectangle2 {
+  width: 13px;
+  top: 1511px;
+}
+.rectangle3 {
+  width: 12px;
+  top: 1797px;
+}
+.rectangle4 {
+  width: 13px;
+  top: 2074px;
+}
+.rectangle5 {
+  width: 12px;
+  top: 2355px;
+}
+.rectangle6 {
+  width: 14px;
+  top: 2589px;
+}
+.rectangle7 {
+  width: 11px;
+  top: 2721px;
+}
 .instruction {
   position: absolute;
   width: 137px;
@@ -99,250 +167,55 @@ export default {};
   line-height: 32px;
   color: #333333;
 }
-.rectangle43 {
+.text{
   position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 1442px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle1 {
-  position: absolute;
-  width: 10px;
-  height: 32px;
-  left: 249px;
-  top: 1440px;
-  font-family: "Playfair Display";
+  width: 528px;  
+    left: 287px;
+      font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+    line-height: 150%;
+  color: #333333;
 }
 .oven {
-  position: absolute;
-  width: 528px;
   height: 40px;
-  left: 287px;
   top: 1442px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
 }
-.rectangle44 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 1513px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle2 {
-  position: absolute;
-  width: 13px;
-  height: 32px;
-  left: 249px;
-  top: 1511px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
 .foodProcessor {
-  position: absolute;
-  width: 528px;
   height: 264px;
-  left: 287px;
   top: 1513px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #333333;
 }
-.rectangle45 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 1799px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle3 {
-  position: absolute;
-  width: 12px;
-  height: 32px;
-  left: 249px;
-  top: 1797px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
+
 .mixer {
-  position: absolute;
-  width: 528px;
   height: 240px;
-  left: 287px;
   top: 1799px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #333333;
 }
-.rectangle46 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 2077px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle4 {
-  position: absolute;
-  width: 13px;
-  height: 32px;
-  left: 248px;
-  top: 2074px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
+
 .water {
-  position: absolute;
-  width: 528px;
   height: 240px;
-  left: 287px;
   top: 2077px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #333333;
 }
-.rectangle47 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 2357px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle5 {
-  position: absolute;
-  width: 12px;
-  height: 32px;
-  left: 249px;
-  top: 2355px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
+
 .bake {
-  position: absolute;
-  width: 528px;
   height: 192px;
-  left: 287px;
   top: 2357px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
 }
-.rectangle48 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 2589px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle6 {
-  position: absolute;
-  width: 14px;
-  height: 32px;
-  left: 247px;
-  top: 2589px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
+
 .knife {
-  position: absolute;
-  width: 528px;
   height: 96px;
-  left: 287px;
   top: 2589px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
 }
-.rectangle49 {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 236px;
-  top: 2723px;
-  background: #f2994a;
-  border-radius: 6px;
-}
-.rectangle7 {
-  position: absolute;
-  width: 11px;
-  height: 32px;
-  left: 249px;
-  top: 2721px;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #ffffff;
-}
+
+
 .serveCheesecake {
-  position: absolute;
-  width: 528px;
   height: 48px;
-  left: 287px;
   top: 2723px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
 }
 .url {
   position: absolute;

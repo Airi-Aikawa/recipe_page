@@ -8,36 +8,36 @@
     </p>
     <p class="ingredient">Ingredients</p>
     <p class="preparation">Graham Cracker Crust</p>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox1" />
-    <label for="checkbox" class="cup">
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox1" />
+    <label for="checkbox" class="checkboxText cup">
       1 and 1/2 cups (150g) graham cracker crumbs (about 10 full sheet graham
       crackers)
     </label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox2" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox2" />
     <label class="butter">5 Tablespoons (70g) unsalted butter, melted</label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox3" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox3" />
     <label class="sugar">1/4 cup (50g) granulated sugar</label>
     <h2 class="cheesecake">Cheesecake</h2>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox4" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox4" />
     <label class="creamcheese">
       four 8-ounce blocks (904g) full-fat cream cheese, softened to room
       temperature
     </label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox5" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox5" />
     <label class="cupsugar">1 cup (200g) granulated sugar</label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox6" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox6" />
     <label class="temperature"
       >1 cup (240g) full-fat sour cream, at room temperature</label
     >
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox7" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox7" />
     <label class="vanilla">1 teaspoon pure vanilla extract</label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox8" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox8" />
     <label class="juice"
       >2 teaspoons fresh lemon juice (optional, but recommended)</label
     >
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox9" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox9" />
     <label class="egg">3 large eggs, at room temperature</label>
-    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox10" />
+    <input type="checkbox" id="checkbox" v-model="checked" class="checkbox checkbox10" />
     <label class="topping">
       topping suggestions: salted caramel, lemon curd, strawberry topping,
       chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream,
@@ -114,39 +114,60 @@ h1 {
   color: #333333;
   white-space: nowrap;
 }
-.checkbox1 {
+.checkbox{
   position: absolute;
   width: 21px;
   height: 21px;
   left: 237px;
-  top: 829px;
-  border: 1px solid #828282;
+    border: 1px solid #828282;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 4px;  
 }
-.cup {
-  position: absolute;
-  width: 554px;
-  height: 50px;
-  left: 275px;
-  top: 830px;
-  font-family: Montserrat;
+.checkbox1 {
+  top: 829px;
+}
+.checkbox2 {
+  top: 882px;
+}
+.checkbox3 {
+  top: 921px;
+}
+.checkbox4 {
+  top: 1040px;
+}
+.checkbox5 {
+  top: 1102px;
+}
+.checkbox6 {
+  top: 1137px;
+}
+.checkbox7 {
+  top: 1172px;
+}
+.checkbox8 {
+  top: 1207px;
+}
+.checkbox9 {
+  top: 1244px;
+}
+.checkbox10 {
+  top: 1279px;
+}
+.checkboxText{
+    position: absolute;
+      left: 275px;  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   color: #333333;
 }
-.checkbox2 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 882px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
+.cup {
+  width: 554px;
+  height: 50px;
+  top: 830px;
 }
+
 .butter {
   position: absolute;
   width: 360px;
@@ -160,16 +181,7 @@ h1 {
   line-height: 25px;
   color: #333333;
 }
-.checkbox3 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 921px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .sugar {
   position: absolute;
   width: 250px;
@@ -196,16 +208,7 @@ h1 {
   line-height: 24px;
   color: #333333;
 }
-.checkbox4 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1040px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .creamcheese {
   position: absolute;
   width: 599px;
@@ -219,16 +222,7 @@ h1 {
   line-height: 25px;
   color: #333333;
 }
-.checkbox5 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1102px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .cupsugar {
   position: absolute;
   width: 246px;
@@ -242,16 +236,7 @@ h1 {
   line-height: 20px;
   color: #333333;
 }
-.checkbox6 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1137px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .temperature {
   position: absolute;
   width: 429px;
@@ -265,16 +250,7 @@ h1 {
   line-height: 25px;
   color: #333333;
 }
-.checkbox7 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1172px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .vanilla {
   position: absolute;
   width: 251px;
@@ -288,16 +264,7 @@ h1 {
   line-height: 20px;
   color: #333333;
 }
-.checkbox8 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1207px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .juice {
   position: absolute;
   width: 488px;
@@ -311,16 +278,7 @@ h1 {
   line-height: 25px;
   color: #333333;
 }
-.checkbox9 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1244px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .egg {
   position: absolute;
   width: 277px;
@@ -334,16 +292,7 @@ h1 {
   line-height: 25px;
   color: #333333;
 }
-.checkbox10 {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  left: 237px;
-  top: 1279px;
-  border: 1px solid #828282;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .topping {
   position: absolute;
   width: 543px;
