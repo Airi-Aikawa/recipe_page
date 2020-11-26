@@ -3,18 +3,21 @@
     <HelloWorld msg="Classic Cheesecake Recipe" />
     <img class="cheesecake" alt="cheesecake" src="./assets/photo1.png" />
     <Instruction></Instruction>
+    <Icon></Icon>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import Instruction from "./components/Instruction.vue"
+import Instruction from "./components/Instruction.vue";
+import Icon from "./components/Icon.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    Instruction
+    Instruction,
+    Icon
   },
 };
 </script>
